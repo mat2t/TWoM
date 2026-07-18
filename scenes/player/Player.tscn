@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://be8qbmt0fe144"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3lwp1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_3lwp1"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1066126393]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1470731318]
+shape = SubResource("CapsuleShape3D_3lwp1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=537140295]
+mesh = SubResource("CapsuleMesh_3lwp1")
